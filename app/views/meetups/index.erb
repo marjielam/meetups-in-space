@@ -1,0 +1,15 @@
+<h1>Meetups</h1>
+
+<ul class="meetups">
+  <% meetups = Meetup.order("lower(name)")%>
+
+  <% meetups.each do |meetup| %>
+    <li>
+      <a href="/meetups/<%= meetup.id %>">
+        <%= meetup.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<br/>
+<a href="meetups/new" class="create-button" >Create a New Meetup</a>

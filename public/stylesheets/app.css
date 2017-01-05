@@ -1,0 +1,81 @@
+
+body {
+  background-image: url('/images/stardust.png');
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+input {
+  color: black;
+  margin: 10px;
+  font-size: 25px;
+}
+
+label {
+  font-size: 25px;
+}
+
+.error {
+  color: IndianRed;
+  font-size: 20px;
+}
+
+.success {
+  color: MediumSeaGreen;
+}
+
+.create-button, .join-button {
+  background-color: Grey;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.user-list {
+  list-style: none;
+}
+
+.avatar {
+
+}
+
+a,
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #3C3C3C;
+}
+
+.top-bar-section {
+  display: inline-block;
+  float: right;
+}
+
+.top-bar-section li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.logo {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.flash {
+  padding: 1em;
+  background-color: #3B9089;
+}

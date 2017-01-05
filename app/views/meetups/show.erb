@@ -1,0 +1,18 @@
+<h3 class="success"><%= @success_message %></h3>
+<h1><%= @meetup.name %></h1>
+
+<p>Location: <%= @meetup.location.name %> (<%= @meetup.location.address %>)</p>
+<p>Description: <%= @meetup.description %></p>
+<p>Created By: <%= @meetup.creator.username %></p>
+
+<h2>Users signed up</h2>
+<p><%= @error %></p>
+<ul class="user-list">
+  <% @meetup.users.each do |user| %>
+    <li><img class="avatar" src="<%= user.avatar_url %>" /> <%= user.username %></li>
+  <% end %>
+</ul>
+
+<form action="/meetups/<%= @meetup.id %>" method="post">
+  <input class="join-button" type="submit" value="Sign Up" />
+</form>

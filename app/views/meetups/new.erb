@@ -1,0 +1,19 @@
+<h1>Create a New Meetup</h1>
+
+<p class="error"><%= @error %></p>
+
+<form action="/meetups/new" method="post">
+  <label for="name">Event Name</label><br />
+  <input type="text" name="name" id="name" value="<%= @name %>"/><br />
+
+  <label for="location_name">Location Name</label><br />
+  <input type="text" name="location_name" id="location_name" value="<%= @location_name %>"/><br />
+
+  <label for="location_address">Location Address</label><br />
+  <input type="text" name="location_address" id="location_address" value="<%= @location_address %>"/><br />
+
+  <label for="description">Event Description</label><br />
+  <input type="text-area" name="description" id="description" value="<%= @description %>" /><br />
+
+  <input class="create-button" type="submit" value="Create Meetup" />
+</form>
